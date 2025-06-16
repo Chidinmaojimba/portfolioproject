@@ -38,7 +38,7 @@
     height: 120px;
 
  }
- 
+
  .navlink {
     list-style: none;
     display: flex;
@@ -178,7 +178,7 @@
 
  .serviceBox{
   display:grid ;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap:20px;
   padding: 40px;
   max-width: 900px;
@@ -197,7 +197,7 @@
   box-shadow: 0 8px 0px rgba(0,0,0,0.1);
  }
 
- .service-card h2{
+ .service-card h3{
   margin-top: 0;
   
   
@@ -206,6 +206,13 @@
   font-size: 15px;
   line-height: 1.6;
   
+ }
+
+ i{
+  color:#4059AD;
+  font-size: 20px;
+  
+
  }
  
  
