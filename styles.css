@@ -9,6 +9,7 @@
     width:100vw;
     background-color: #CCD0CF;
     font-family: Montserrat;
+    overflow-x: hidden;
  }      
  .main{
     width: 100%;
@@ -124,7 +125,6 @@ transform-style: preserve-3d;
   margin-top: 1rem;
 }
 .flip-card-back{
-  background-image: linear-gradient(315deg, #4A5C6A,  #d9048e);
   color:#ffffff ;
   transform: rotateY(180deg);
 }
@@ -487,3 +487,39 @@ transform-style: preserve-3d;
   border-top: 1px solid #333;
   font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+/* responsiveness for smart phones */
+
+
+@media only screen and (max-width: 768px) {
+  
+  .containerNav{
+    overflow: auto;
+    overflow-y: hidden;
+  }
+  
+  .container2 {
+    flex-direction: column-reverse;
+  }
+  
+  .flip-card {
+    margin-bottom: 8rem;
+  }
+  
+  .flip-card-back h1,
+  .flip-card-back h2 {
+    display: none;
+  }
+}
+/* @media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  } */
