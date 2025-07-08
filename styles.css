@@ -496,11 +496,13 @@ transform-style: preserve-3d;
 
 
 
-/* responsiveness for smart phones */
+/* responsiveness for tablet devices */
 
 
 @media only screen and (max-width: 768px) {
-  
+  .container1{
+    height:5500px;
+  }
   .containerNav{
     overflow: auto;
     overflow-y: hidden;
@@ -518,6 +520,26 @@ transform-style: preserve-3d;
   .flip-card-back h2 {
     display: none;
   }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .serviceBox{
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  /* .portfolio{
+    display:flex;
+  } */
+
+  .portfolio-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
 }
 /* @media (min-width: 1024px) {
   body {
