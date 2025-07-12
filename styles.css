@@ -492,10 +492,6 @@ transform-style: preserve-3d;
 
 
 
-
-
-
-
 /* responsiveness for tablet devices */
 
 
@@ -541,7 +537,28 @@ transform-style: preserve-3d;
     
 }
 }
-/* @media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  } */
+
+/* responsiveness for mobile */
+@media (max-width: 480px) {
+  
+  .serviceBox{
+    grid-template-columns: repeat(1 , 1fr);  
+  }
+
+.portfolio-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.container1{
+  width:100%;
+  height:7000px;
+  
+}
+body{
+background-color: transparent;
+}
+
+}
